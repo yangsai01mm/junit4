@@ -19,6 +19,7 @@ import org.junit.internal.Throwables;
  * <pre>
  * TestSuite suite= new TestSuite();
  * suite.addTest(new MathTest("testAdd"));
+ * suite.addTest(new MathTest("testAdd"));
  * suite.addTest(new MathTest("testDivideByZero"));
  * </pre>
  * <p>
@@ -35,6 +36,7 @@ import org.junit.internal.Throwables;
  * A final option is to do the same for a large array of test classes.
  * <pre>
  * Class[] testClasses = { MathTest.class, AnotherTest.class };
+ * TestSuite suite= new TestSuite(testClasses);
  * TestSuite suite= new TestSuite(testClasses);
  * </pre>
  *
